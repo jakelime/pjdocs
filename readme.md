@@ -6,7 +6,7 @@ quality documentations.
 It has an extension to work with `JavaDoc`. In the Java code, write
 inline comments in JavaDoc style as usual.
 
-## Quickstart
+## Installation
 
 Normal usage, writing documentations
 
@@ -15,9 +15,18 @@ git clone https://github.com/jakelime/pjdocs-project.git
 cd pjdocs-project
 PS C:\Users\70014156\Documents\pjdocs-project> python -m venv venv
 PS C:\Users\70014156\Documents\pjdocs-project> .\venv\Scripts\activate
-(venv) PS C:\Users\70014156\Documents\pjdocs-project> pip install ....
+(venv) PS C:\Users\70014156\Documents\pjdocs-project> pip install -r requirements.txt
+## Download unofficial javasphinx from https://github.com/lucag/javasphinx
+cd "C:\Users\JakeLim\Documents\javasphinx"
+(venv) PS C:\Users\JakeLim\Documents\javasphinx> python setup.py install
+```
 
-(venv) PS C:\Users\70014156\Documents\pjdocs-project> sphinx-quickstart doc
+## Quickstart
+
+Normal usage, writing documentations
+
+```bash
+(venv) PS C:\Users\70014156\Documents\pjdocs-project> sphinx-quickstart docs
 (venv) PS C:\Users\70014156\Documents\pjdocs-project> sphinx-build -M html docs/source/ docs/build/
 Running Sphinx v7.2.6
 building [html]: targets for 1 source files that are out of date
@@ -25,8 +34,9 @@ done
 build succeeded.
 
 The HTML pages are in docs\build\html.
-
 ```
+
+## Autodocs
 
 Using `autodocs` API to generate `src-*.rst` files automatically.
 
